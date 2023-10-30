@@ -1,0 +1,32 @@
+package PROYECTOFACTURASPOO;
+
+public class Producto {
+    private int id;
+    private String nombre;
+    private float precio;
+    private static int indiceId;
+
+    public Producto() {
+        this.id=++indiceId;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public float getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(float precio) {
+        this.precio = precio;
+    }
+}

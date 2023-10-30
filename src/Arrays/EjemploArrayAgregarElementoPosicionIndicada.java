@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class EjemploArrayAgregarElementoPosicionIndicada {
     public static void main(String[] args) {
-        int [] a = {1,2,3,4,5,6,7,8,9,10,0};
+        int [] a = {1,2,3,4,5,6,7,8,9};
         Scanner s = new Scanner(System.in);
         System.out.println("Digite la posicion a ingresar");
         int posicion = s.nextInt();
@@ -29,3 +29,12 @@ public class EjemploArrayAgregarElementoPosicionIndicada {
     }
 
 }
+// esta es otra forma
+//  for (int i =a.length-1 ; i > posicion ; i--) {
+//          a[i]=a[i-1];
+//          }
+//          a[posicion]=valor;
+//          //System.out.println(aux);
+//          for (int i = 0; i <a.length; i++) {
+//        System.out.println(a[i]);
+//        }
