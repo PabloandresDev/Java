@@ -25,10 +25,12 @@ public class MainAppSobreCargaConstructores {
             System.out.println("Nota Matematica = " + ((Alumno) persona).getNotaMatematica());
             System.out.println("Nota Castellano = " + ((Alumno) persona).getNotaCastellano());
             System.out.println("Nota Historia = " + ((Alumno) persona).getNotaHistoria());
+            System.out.println("El promedio de notas es " + ((Alumno) persona).calcularPromedio());
             if(persona instanceof AlumnoInternacional){
                 System.out.println("===============DATOS ALUMNO INTERNACIONAL=================");
                 System.out.println("Nota ingles= " + ((AlumnoInternacional)persona).getPais());
                 System.out.println("Nota ingles= " + ((AlumnoInternacional)persona).getNotaIdiomas());
+                System.out.println("El promedio de notas es " + ((AlumnoInternacional) persona).calcularPromedio());
             }
         }
         if(persona instanceof Profesor){

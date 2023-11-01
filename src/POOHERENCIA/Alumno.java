@@ -63,6 +63,11 @@ public class Alumno extends Persona {
         this.notaHistoria = notaHistoria;
     }
 
+
+    public double calcularPromedio(){
+        return (this.notaCastellano+this.notaHistoria+this.notaMatematica)/3;
+    }
+
     @Override
     public String toString() {
         return "Alumno{" +

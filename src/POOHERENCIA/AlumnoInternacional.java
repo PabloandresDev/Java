@@ -1,5 +1,7 @@
 package POOHERENCIA;
 
+import javax.swing.plaf.basic.BasicDesktopIconUI;
+
 public class AlumnoInternacional extends Alumno{
    private String pais;
    private double notaIdiomas;
@@ -29,6 +31,11 @@ public class AlumnoInternacional extends Alumno{
 
     public void setNotaIdiomas(double notaIdiomas) {
         this.notaIdiomas = notaIdiomas;
+    }
+
+    @Override
+    public double calcularPromedio() {
+        return ((super.calcularPromedio()*3)+this.notaIdiomas)/4;
     }
 
     @Override
